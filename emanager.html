@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NVS SYSTEM</title>
+    <link rel="stylesheet" href="login.css">
+  <meta charset="utf-8">
+  <meta name="viewport">
+   
+    <nav class="topnav">
+  <img src="logos.jpg" alt="NVSLOGO" width="60" height="50" style="float: left">
+      <ul>
+           <a class="active" href="home.php">Home</a>
+        
+          </ul>
+       
+        
+</nav>
+   
+</head>
+    <script>
+     function checknull() {
+            
+            var x = document.forms["admin"]["names"].value;
+           var y = document.forms["admin"]["IDnumber"].value;
+
+            
+  if (x == "" || x == null) {
+    alert("names must be filled out");
+    return false;
+  } 
+       else if (x == "" || x == null) {
+    alert("names must be filled out");
+    return false;
+  }    
+           
+}
+    </script>
+    <body> 
+        <center><h1>Election Manager Tab </h1></center>
+        <div class="div8">
+           <ul> <center>
+       <a href="votedate.php">dates</a>
+     <a href="emanager.html">candidates</a>
+               <a href="Registration.php">list</a>
+               <a href="updateballot.php">ballot</a>
+           </center> </ul> </div>
+        <div><form action="results.php" method="post"><button type="submit"  value="submit" name="submit" id="submit">Release results</button><br></form></div>
+<h1>Add candidates</h1>
+         <form name="admin" action="listing.php" method="post" onsubmit="return checknull()">
+                <label for="IDnumber"><B> IDnumber</B></label><br>
+                <input type="int" id="IDnumber" name="IDnumber" size="180" pattern="[0-9]{4}" title="numbers only and length of four"/><br><br>
+                <label for="names"><B>NAMES </B></label><br>
+                <input type="text" id="names" name="names" size="180"/><br><br>
+                <label for="position"><b>POSITION</b></label><br>
+                <select  type="text"   id="position" name="position" style="width:95%" size="2"  > <br><br>
+                    <option>Chairman</option>
+                     <option>Vice chairman</option>
+                     <option>Secretary General</option>
+                     <option>Tresurer</option>
+                </select><br> <br>
+              
+                 <button type="submit"  value="submit" name="log In" id="submit">
+        Register
+                  </button><br>    
+            </form>
+        
+            
+            
+    </body>
+</html>

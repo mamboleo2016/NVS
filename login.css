@@ -1,0 +1,212 @@
+.topnav {
+  background-color: black;
+  overflow: hidden;          
+  height: 50px;
+    border-radius: 7px;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+    padding: 10px;
+}
+.topnav ul {
+    float: inherit;
+}
+
+/* Change the color of links on hover */
+.topnav ul a:hover {
+  color: blueviolet;
+
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: silver;
+    border-radius:10rem;
+}
+/*styling inputs*/
+input[type=int]  {
+  padding: 8px;
+    box-sizing: border-box;
+    border-radius: 5px;
+     border: 1px ridge silver;
+}
+input[type=text] {
+  padding: 8px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid silver;
+}
+
+input[type=password] {
+  padding: 8px;
+    box-sizing: border-box;
+    border-radius: 5px;
+     border: 1px solid silver;
+}
+input[type=submit], button {
+    width: 20%;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin: none;
+  border: 3px;
+  border-radius: 4px;
+}
+.select {
+  padding: 8px;
+    box-sizing: border-box;
+    border-radius: 5px;
+     border: 1px solid silver;
+}
+.div4:hover {
+    background-color: silver;
+}
+button:hover {
+    background-color: blueviolet;
+}
+
+input[type=submit]:hover {
+  background-color: blueviolet;
+}
+div {
+  border: 1px solid blueviolet;
+    border-radius: 8px;
+  padding:14px 20px;
+    margin-top: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.container{
+    width: 25%;
+    float: left;
+    padding: 10px;
+   background-color: white;
+    margin-left: 5px;
+    margin-right: 0px;
+    border-radius: 0px;
+    border: none;
+}
+.div4 {
+    width: 30%;
+    float: left;
+    padding: 10px;
+   background-color: white;
+    margin-left: 15px;
+    margin-right: 0px;
+    border-radius: 0px;
+    border: none;
+    
+}
+.div5 {
+    width: 60%;
+    padding: 10px;
+    background-color: black;
+    border:  double white, blueviolet;
+    float: right;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 0px;
+    margin-bottom: 10%;
+}
+.div6 {
+    padding: 10px;
+   background-color: white;
+    margin-left: 400px;
+    margin-right: 400px;
+    border-radius: 0px;
+    border: none;
+}
+.dot{
+  height: 25px;
+  width: 25px;
+  background-color: blueviolet;
+  border-radius: 50%;
+  display: inline-block;
+}
+.div8 {
+    border: none;
+    overflow: hidden;
+}
+.div8 a{
+     color: blueviolet;
+  text-decoration: none;
+  font-size: 17px;
+    padding: 19px;
+    
+}
+.div9 {
+    float: left;
+    width: 40%;
+    padding: 10px;
+    background-color: white;
+    border:  double white, blueviolet;
+    margin-left: 10px;
+    margin-right: 0px;
+    border-radius: 0px;
+    margin-bottom: 10%;
+}
+.div10 {
+    float: right;
+   width: 50%;
+    padding: 10px;
+    background-color: white;
+    border:  double white, blueviolet;
+    margin-left: 0px;
+    margin-right: 10px;
+    border-radius: 0px;
+    margin-bottom: 10%;
+}
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h2 {
+    
+    font-size:30px;
+        font-family:verdana;
+}
+
+.div2 {
+  border: 1px solid blueviolet;
+    border-radius: 8px;
+  padding:14px 20px;
+    margin-left: 80px;
+    margin-right: 200px;
+}
+.div3 {
+  border: 1px solid white;
+    background: white;
+    border-radius: 0px;
+  padding:14px 20px;
+    margin-top: 2px;
+    margin-left: -2px;
+    margin-right: 0px;
+    font-size: 15px;
+}
+
+.divvote {
+  border: 1px solid blueviolet;
+    border-radius: 8px;
+  padding:14px 20px;
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    align-content: center;
+}
+
+input[type=text]:focus {
+  border: 2px solid blueviolet;
+}
+input[type=int]:focus {
+  border: 2px solid blueviolet;
+}
+input[type=password]:focus {
+  border: 2px solid blueviolet;
+}
+

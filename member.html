@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NVS SYSTEM</title>
+    <link rel="stylesheet" href="login.css">
+     <link rel="stylesheet" href="fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport">
+    <nav class="topnav">
+  <img src="logos.jpg" alt="NVSLOGO" width="60" height="50" style="float: left">
+      <ul>
+           <a class="active" href="home.html"><i class="fas fa-house-user"></i> Home</a>
+        <a href="logIn.html"> <i class=' far fa-user-circle'></i> LogIn</a>
+      <a href="test.html"><i class="far fa-list-alt"></i> Register</a>
+       
+          </ul>
+        <ol>
+         <a href="adminlogin.html"><i class="fas fa-sign-in-alt"></i> Login(ADMIN)</a>
+        </ol>
+</nav>
+    <script>
+    function lettersAndSpaceCheck(names)
+{
+var regEx = /^[a-z]+ [a-z\s]*$/;
+if(names.value.match(regEx))
+{
+return true;
+}
+
+else
+{
+alert("Please enter letters and space only.");
+return false;
+}
+}
+function integersCheck(IDnumber) 
+        {
+            var regEx =/^-?[0-9]+$/;
+            if(IDnumber.value.match(regEx))
+                {
+                    return true;
+                }
+            else {
+                alert("integers only");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+     <h1>New Member Registration</h1>
+        
+           
+            <form name="members" action="access-denied.php" method="post">
+                <label for="IDnumber"><B>  IDnumber</B></label><br>
+                <input type="int" id="IDnumber" name="IDnumber" size="180" onclick="integersCheck(document.members.IDnumber)" required/><br><br><br>
+                <label for="names"><B>NAMES </B></label><br>
+                <input type="text" id="names" name="names" size="180" onclick="lettersAndSpaceCheck(document.members.names)" required/><br><br><br><br>
+                 <button type="submit"  value="Log In" name="log In" id="submit">
+       <i class="fas fa-pen-alt"> Register</i>
+                  </button><br>    
+            </form>
+     
+  </body>
+</html>

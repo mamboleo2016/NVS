@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NVS SYSTEM</title>
+    <link rel="stylesheet" href="login.css">
+  <meta charset="utf-8">
+  <meta name="viewport">
+    <nav class="topnav">
+  <img src="logos.jpg" alt="NVSLOGO" width="60" height="50" style="float: left">
+      <ul>
+           <a class="active" href="home.php"> Home</a>
+        <a href="logIn.html"> LogIn</a>
+      <a href="test.html"> Register</a>
+       <a href="adminlogin.html"> Login(ADMIN)</a>
+          </ul>
+        
+</nav>
+   
+</head>
+<body>
+     <center><h1>COoperative Officials Tab</h1></center>
+        
+    
+           <h1> ADD ELECTION MANAGER</h1>
+    
+           <form action="admin2.php" method="post">
+                <label for="IDnumber"><B>IDnumber</B></label><br>
+                <input type="int" id="IDnumber" name="IDnumber" size="180"  pattern="[0-9]{4}" title="numbers only and length of four" required/><br><br>
+                <label for="names"><B>NAMES</B></label><br>
+                <input type="text" id="names" name="names"size="180"  pattern="[a-zA-Z]+[ ][a-zA-Z]+" title="name space name format" required/><br><br>
+            
+               
+                 <button type="submit"  value="Log In" name="log In" id="submit">
+                     
+        Register
+                  </button><br>
+            </form>
+         
+  </body>
+</html>

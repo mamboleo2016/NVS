@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+	<title>NVS SYSTEM</title>
+    <link rel="stylesheet" href="login.css">
+  <meta charset="utf-8">
+  <meta name="viewport">
+    <nav class="topnav">
+        <img src="logos.jpg" alt="NVSLOGO" width="60" height="50" style="float: left">
+      <ul>
+          
+           <a class="active" href="home.php"> Home</a>
+        <a href="logIn.html">  LogIn</a>
+      <a href="test.html">Register</a>
+        <a href="adminlogin.html"> Login(ADMIN)</a>
+          </ul>
+       
+        
+</nav>
+    
+</head>
+<script>
+    function validatepass(){    
+var password=document.setpass.password.value;  
+  
+ if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+
+    </script>
+<body>
+    <center><h1>SET PASSWORD </h1></center>
+         
+    <h1>INPUT PASSWORD</h1>
+	 <form name="setpass" action="pass.php" method="post" onsubmit="return validatepass()">
+                
+               
+                <label for="IDnumber"><B>ID NUMBER</B></label><br>
+                <input  type="text"  id="IDnumber" name="IDnumber"size="180" pattern="[0-9]{4}" title="four integers" /><br><br>
+                <label for="password"><B>PASSWORD</B></label><br>
+                <input  type="password"  id="password" name="password"size="180"  title="10 integers" /><br><br>
+        
+                 <button type="submit"  value="Log In" name="log In" id="submit">
+                     
+        UPDATE 
+                  </button><br>
+            </form>
+        
+</body>
+
+</html>
